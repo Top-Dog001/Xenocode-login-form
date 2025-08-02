@@ -1,0 +1,166 @@
+body {
+  background-image: url('V images/2.jpeg'); 
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.six {
+ /* width: 70%; */
+  height: auto;
+ margin: 80px auto; 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  width: 85%;
+  max-width: 400px; 
+}
+
+
+h1 {
+  text-align: center;
+  color: white;
+  padding: 7px 0;
+  font-weight: 140;
+  letter-spacing: 3px;
+}
+
+
+.one {
+  display: flex;
+  width: 85%;
+  margin: 30px auto;
+  border: 1px solid hsl(40 90% 100%);;
+  border-radius: 20px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  padding: 5px 20px;
+  box-sizing: border-box;
+  align-items: center;
+  font-size: 102%;
+  color: white;
+}
+
+.two {
+  display: flex;
+  width: 85%;
+  margin: 30px auto;
+  border: 1px solid hsl(40 90% 100%);;
+  border-radius: 20px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  padding: 5px 20px;
+  box-sizing: border-box;
+  align-items: center;
+  font-size: 102%;
+}
+
+.five {
+  display: flex;
+  flex-wrap: nowrap; /* 🔥 force them to stay on one line */
+  justify-content: space-between;
+  align-items: center; 
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5px 10px;
+  gap: 18px;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  backdrop-filter: blur(5px);
+}
+
+.five p {
+  padding-right: 8%;
+  white-space: nowrap; /* prevents line breaks */
+  text-overflow: ellipsis;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding-left: 8%;
+  flex-shrink: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  border: 1px solid hsl(40 90% 100%);
+  color: hsl(40 90% 100%);;
+  background-color: transparent;
+  width: 85%;
+  margin: 10px auto;
+  padding: 12px 0;  /* instead of 8px 39% */
+  border-radius: 26px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+  
+}
+
+.register {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 90%;
+  color: hsl(40 90% 100%);
+  font-weight: 140;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 0;
+  text-align: center;
+  font-family: Georgia;
+  color: white;
+  font-size: 20px;
+  font-weight: 60;
+  letter-spacing: 2px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
+  font-weight: 140;
+}
+
+input[type="checkbox"] {
+  accent-color: lightblue; /* changes the checkbox color */
+  width: 16px;
+  height: 15px;
+}
+
+@media (min-width: 768px) {
+  .one,
+  .two {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+
+  input::placeholder {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .options-row {
+    font-size: 13px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 6px;
+  }
+}
