@@ -46,6 +46,7 @@ p {
 .hero-video {
   display: flex;
   justify-content: center;
+  align-content: center;
   width: 100%;
   max-width: 600px;
   border-radius: 10px;
